@@ -1,0 +1,3 @@
+([('cgm_analyzer',
+   '/Users/coppock/Documents/GitHub/Clinic Apps/cgm_app/dist/cgm_analyzer',
+   'EXECUTABLE')],)
