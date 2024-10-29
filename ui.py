@@ -1,6 +1,5 @@
 import csv
 import statistics
-import sys
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
@@ -10,7 +9,6 @@ from PyQt5.QtChart import QChart, QChartView, QLineSeries, QScatterSeries, QValu
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QBrush, QColor, QPen
 from PyQt5.QtWidgets import (
-    QApplication,
     QFileDialog,
     QLabel,
     QPushButton,
@@ -387,10 +385,3 @@ class CGMAnalyzer(QWidget):
         )
         result_text += f"Grade: {metrics['grade']}"
         self.result_label.setText(result_text)
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    analyzer = CGMAnalyzer()
-    analyzer.show()
-    sys.exit(app.exec_())
